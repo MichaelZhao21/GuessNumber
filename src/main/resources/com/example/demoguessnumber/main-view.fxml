@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="500.0" spacing="20.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demoguessnumber.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="mainText" style="-fx-font-weight: 800; -fx-text-fill: #ffffff;" text="Guess the Number!" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="30.0" />
+      </font></Label>
+   <Label fx:id="infoText" layoutX="98.0" layoutY="73.0" style="-fx-font-weight: 400; -fx-text-fill: #ffffff" text="Press the Start button to continue" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="guessInput" alignment="CENTER" onKeyPressed="#onInputEnter" promptText="Enter a number..." style="-fx-max-width: 180px; -fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: #dddddd; -fx-border-radius: 4px;" visible="false">
+      <font>
+         <Font size="18.0" />
+      </font></TextField>
+    <Button fx:id="submitButton" onAction="#onSubmitButtonClick" style="-fx-cursor: hand;-fx-border-color: transparent; -fx-border-radius: 2px; -fx-background-color: #444444; -fx-text-fill: #ffffff;" text="Start">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+</VBox>
